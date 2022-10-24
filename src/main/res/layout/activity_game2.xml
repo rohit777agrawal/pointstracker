@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity2">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="subTen1"
+            android:rotation="180"
+            android:text="-10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#c98477" />
+
+        <ImageButton
+            android:id="@+id/lossButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="loss1"
+            android:padding="0dp"
+            android:rotation="180"
+            android:tag="down1"
+            app:srcCompat="@drawable/downhwc" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="subFive1"
+            android:rotation="180"
+            android:text="-5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#c98477" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gameImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:srcCompat="@drawable/greenhw" />
+
+    <TextView
+        android:id="@+id/playerNameTextView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:rotation="180"
+        android:text="Player Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameImageView1"
+        app:layout_constraintStart_toStartOf="@+id/gameImageView1"
+        app:layout_constraintTop_toTopOf="@+id/gameImageView1" />
+
+
+    <TextView
+        android:id="@+id/pointsTextView1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:rotation="180"
+        android:text="50"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameImageView1"
+        app:layout_constraintStart_toStartOf="@+id/gameImageView1"
+        app:layout_constraintTop_toTopOf="@+id/gameImageView1" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameImageView1">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="addTen1"
+            android:rotation="180"
+            android:text="+10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#7D8D70" />
+
+
+        <ImageButton
+            android:id="@+id/gainButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="gain1"
+            android:padding="0dp"
+            android:rotation="180"
+            app:srcCompat="@drawable/uphwc" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="addFive1"
+            android:rotation="180"
+            android:text="+5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#7D8D70" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/gameImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="addFive2"
+            android:text="+5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#7D8D70" />
+
+        <ImageButton
+            android:id="@+id/gainButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="gain2"
+            android:padding="0dp"
+            app:srcCompat="@drawable/uphwc" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="addTen2"
+            android:text="+10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#7D8D70" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gameImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/greenhw" />
+
+    <TextView
+        android:id="@+id/playerNameTextView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Player Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameImageView2"
+        app:layout_constraintStart_toStartOf="@+id/gameImageView2"
+        app:layout_constraintTop_toTopOf="@+id/gameImageView2" />
+
+    <TextView
+        android:id="@+id/pointsTextView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="50"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameImageView2"
+        app:layout_constraintStart_toStartOf="@+id/gameImageView2"
+        app:layout_constraintTop_toTopOf="@+id/gameImageView2" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameImageView2">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="subFive2"
+            android:text="-5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#c98477" />
+
+        <ImageButton
+            android:id="@+id/lossButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:onClick="loss2"
+            android:padding="0dp"
+            android:tag="down2"
+            app:srcCompat="@drawable/downhwc" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="subTen2"
+            android:text="-10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="#c98477" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
